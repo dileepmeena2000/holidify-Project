@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Destination Trip</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="css/package.css" />
+
+    <!-- link java script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      href="https://img.freepik.com/free-vector/flat-vintage-travel-background_23-2148189177.jpg?size=338&ext=jpg&ga=GA1.1.1788614524.1719446400&semt=ais_user"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="navlogo"
+          />
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="moblogo"
+          />
+        </a>
+        <!-- mobile view -->
+        <button
+          class="navbar-toggler"
+          data-bs-target="#a"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu div start -->
+        <div class="navbar-collapse collapse" id="a">
+          <ul class="navbar-nav ms-auto c">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Destinations
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="package.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Package</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="Visiual stories.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+                >Visual Stories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="Besttime.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Best Time</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="Visa Policy.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Visa Policy</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <button
+                class="main-btn"
+                data-bs-target="#b"
+                data-bs-toggle="modal"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- menu div end -->
+      </div>
+      <!-- container fluid end -->
+    </nav>
+    <!-- navbar end -->
+
+    <body onload="myfunction()">
+      <div id="loading"></div>
+    </body>
+
+    <br /><br /><br />
+    <!-- container start -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-1 mt-5"></div>
+        <div class="col-md-10">
+          <center>
+            <h2>
+              WELCOME TO <b style="color: green">TOUR PACKAGES </b>OF INDIA
+            </h2>
+          </center>
+          <center>
+            <b style="font-size: 20px; color: orange"
+              >Compare India tours & packages from top Travel agents</b
+            >
+          </center>
+          <br />
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            India, considered being the most incredible Country of the world
+            with alluring harmony in culture, customs and heritage, showcase the
+            great deal of unity in diversity. The diverse rituals, lifestyle,
+            heritage, religion, faiths and believes, India is blessed with most
+            mesmerizing landscapes and sceneries. India is country that has
+            something special for everyone. As the mother takes care of her
+            children, this Mother India takes care for everyone’s needs and
+            interests. The richness of culture, heritage, believes, faiths and
+            religions make India the most incredible and extraordinary country.
+            From the great Himalayas and other mountain ranges to the Great
+            Indian Thar Desert. From the great architectures of Historical
+            Monuments to the Modern Era Buildings, from agriculture to the heavy
+            industries, from Luxury to Simplicity to wildlife to Adventure.
+            India gives away an immense pleasure while being explored.
+          </p>
+
+          <center>
+            <p style="color: teal; font-size: 20px">(Read More...)</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <!-- container end -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://www.travelsiteindia.com/img/historical-tour.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://www.travelsiteindia.com/img/honeymoon-packages.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://www.travelsiteindia.com/img/temple-tour.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://www.travelsiteindia.com/img/south-india-package.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="https://www.indianholidaytrip.com/upload/static/Home_Video2_1.jpg?w=671"
+            alt=""
+            class="w-100"
+            height="300px"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="https://www.khyberhotels.com/blog/wp-content/uploads/2023/10/winter-kashmir.jpg"
+            alt=""
+            class="w-100"
+            height="300px"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/DestMenuImg/Img_4750_202317221058_sikkim.jpg"
+            alt=""
+            class="w-100"
+            height="300px"
+          />
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://www.indianholidaytrip.com/Upload/Static/Home_BannerImg_4911761_202243070519.jpg?h=700"
+            alt=""
+            class="w-100"
+            height="300px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- container start -->
+     <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-success table-striped text-center">
+            <thead>
+              <tr>
+                <th
+                  colspan="5"
+                  class="text-white"
+                  style="font-size: 25px; background-color: teal"
+                >
+                  Popular India Packages
+                </th>
+              </tr>
+
+              <tr>
+                <th scope="col">Packages</th>
+                <th scope="col">Price</th>
+                <th scope="col">Days</th>
+                <th scope="col">inclision</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Manali, Kullu</td>
+                <td>₹ 15,999*</td>
+                <td>3 Nights / 4 Days</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Leh, Pangong Lake, Nubra Valley</td>
+                <td>₹ 31,000*</td>
+                <td>6 Nights / 7 Days</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Gangtok, Kalimpong, Darjeeling</td>
+                <td>₹ 23,891*</td>
+                <td>5 Nights / 6 Days</td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>Gangtok, Pelling, Darjeeling</td>
+                <td>₹ 28,017*</td>
+                <td>6 Nights / 7 Days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> 
+
+    <!--container mt-5 end-->
+
+    <!-- container start -->
+       <div class="container">
+      <h1 style="color: teal; font-size: 40px">Latest Reviews for India</h1>
+      <div class="row">
+        <div class="col-md-4  mb-5">
+          <div class="card" style="width: 22rem; height: 27rem">
+            <div class="card-body">
+              <h5 class="card-title" style="color: teal; font-size: 25px">
+                In Safe Hand
+              </h5>
+              <br />
+              <p
+                class="card-text"
+                style="
+                  line-height: 35px;
+                  letter-spacing: 1px;
+                  word-spacing: 0.1px;
+                  padding-right: 5px;
+                  text-align: justify;
+                  font-size: medium;
+                "
+              >
+                We found Safehands Travels Pvt Ltd through TripCraft This is a
+                legit inbound tour company - offering rented car (with driver)
+                and hotel accommodation. Mr Rohit was our contact person,
+                responsive & <b> Read More..</b>
+              </p>
+              <br />
+              <center>
+                <a
+                  href="#"
+                  class="btn btn-primary  mb-5"
+                  style="background-color: black"
+                  >Read More</a
+                >
+              </center>
+            </div>
+          </div>
+        </div> 
+        
+        <br><br>
+        <div class="col-md-4 mb-5" >
+          <div class="card" style="width: 22rem; height: 23rem">
+            <div class="card-body">
+              <h5 class="card-title" style="color: teal; font-size: 25px">
+                Indian advanture
+              </h5>
+              <p
+                class="card-text"
+                class="card-text"
+                style="
+                  line-height: 35px;
+                  letter-spacing: 1px;
+                  word-spacing: 0.1px;
+                  padding-right: 5px;
+                  text-align: justify;
+                  font-size: medium;
+                "
+              >
+                We have just started our travels and do leave India until 5th
+                December but so far we are very happy with Trip 2 India tours &
+                <b> Read More..</b>
+              </p>
+              <br /><br />
+              <center>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="background-color: black"
+                  >Read More</a
+                >
+              </center>
+            </div>
+          </div>
+        </div> 
+
+        <div class="card" style="width: 22rem; height: 25rem">
+          <div class="card-body">
+            <h5 class="card-title" style="color: teal; font-size: 25px">
+              Colourful Holidays
+            </h5>
+            <p
+              class="card-text"
+              style="
+                line-height: 35px;
+                letter-spacing: 1px;
+                word-spacing: 0.1px;
+                padding-right: 5px;
+                text-align: justify;
+                font-size: medium;
+              "
+            >
+              We did our booking via internet at least 10 days before our tour
+              started. Everything was worked out perfectly. There was a
+              representative of colourful indian holidays at Delhi airport to
+              pick us up, c & <b> Read More..</b>
+            </p>
+            <br />
+            <center>
+              <a
+                href="#"
+                class="btn btn-primary"
+                style="background-color: black"
+                >Read More</a
+              >
+            </center>
+          </div>
+        </div> 
+      </div>
+    </div> 
+
+    <!-- container end -->
+    <!-- container start -->
+    <br /><br />
+    <div class="container">
+      <h1>Top Places in India for tour packages</h1>
+      <hr />
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/tooltipImages/MANALI.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>MANALI</h4>
+        </div> 
+
+         <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/tooltipImages/LADAKH.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>LADAKH</h4>
+        </div> 
+
+        <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/tooltipImages/ANDAMAN.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>ANDAMAN</h4>
+        </div> 
+
+         <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/bgImages/SRINAGAR.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>SRINAGAR</h4>
+        </div> 
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <!-- container start -->
+
+    <div class="container mt-5">
+      <h1>Top States in India for Tour Packages</h1>
+      <hr />
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="https://www.holidify.com/images/tooltipImages/RAJASTHAN.jpg"
+            alt=""
+            class="w-100"
+          />
+
+          <h4>Rajsthan packages</h4>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="https://www.holidify.com/images/tooltipImages/JAMMU-AND-KASHMIR.jpg"
+            alt=""
+            class="w-100"
+          />
+
+          <h4>Janmmu and kashmir packages</h4>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="https://www.holidify.com/images/tooltipImages/HIMACHAL-PRADESH.jpg"
+            alt=""
+            class="w-100"
+          />
+
+          <h4>Himachal-pradesh packages</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- container end -->
+    <!-- container start -->
+    <div class="container mt-5">
+      <h1>Countries you can explore</h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAJEEG0psey4u57B43OUba2Jxyshbj2BkOAQ&s"
+            alt=""
+            class="w-100"
+          />
+          <h4>Trukey</h4>
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/bgImages/UAE.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>United Arab Emirates</h4>
+        </div>
+
+        <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/bgImages/MADINAH.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>Saudi Arabia</h4>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/30214916668eed51a4c7ao_20220914193628.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>Qatar</h4>
+        </div>
+      </div>
+    </div> 
+    <!-- container end -->
+    <br /><br /><br />
+    <br />
+    <hr />
+    <br />
+    <!-- footer start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <h2>Explore Holidify</h2>
+          <ul>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Package</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Hotels</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Destination</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Collections</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Top India Tours</h2>
+
+          <ul>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Hawa Mahal Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >TAJ Mahal Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                Shrinagar Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                Shimla Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                AyodhyaTours</a
+              >
+            </li>
+
+            <br />
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Need help with tour packages?</h2>
+          <h4 style="color: teal">Fill This Form To Get The Callback</h4>
+          <h6><b style="color: orange">contact no :-</b> 0919999999</h6>
+          <h6><b style="color: orange">E-mail :-</b> Helloholiday@gmail.com</h6>
+          <h6><b style="color: orange">Mon-Fri:</b> 10AM - 7PM (IST)</h6>
+          <h6><b style="color: orange">Saturday:</b> 10AM - 2PM (IST)</h6>
+          <h2>FOLLOW US</h2>
+          <a href="#"
+            ><i
+              class="bx bxl-facebook-circle"
+              style="font-weight: 400; margin-left: 3px; font-size: 45px"
+            >
+            </i
+          ></a>
+          <a href="#"
+            ><i
+              class="bx bxl-instagram"
+              style="
+                color: orangered;
+                font-weight: 400;
+                margin-left: 3px;
+                font-size: 45px;
+              "
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="bx bxl-whatsapp"
+              style="
+                color: green;
+                font-weight: 400;
+                margin-left: 3px;
+                font-size: 45px;
+              "
+            ></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <center>
+        © Holidify Travels Pvt Ltd.- All Right Reserved
+        <span style="color: blue">Terms Privacy</span>
+      </center>
+    </div>
+    <!-- footer end -->
+
+    <!-- button trigger model -->
+    <div class="modal fade" id="b">
+      <div class="modal-dialog modal-md">
+        <!-- model-xl ,md,sm,lg -->
+        <div class="modal-content">
+          <div class="modal-header" style="background: teal">
+            <h3 class="modal-title" style="color: white; text-align: center">
+              book now
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- model header end -->
+          <div class="modal-body" style="background: lightslategray">
+            <form action="">
+              <div class="mb-3">
+                <label for="">Name:</label>
+                <input type="text" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="">E-mail:</label>
+                <input type="email" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="">No.of guests:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g.,23"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="">Arrival Date & Time *:</label>
+                <input type="date" class="form-control" required />
+              </div>
+              <br />
+              <center>
+                <button
+                  class="btn btn-warning"
+                  style="
+                    font-size: larger;
+                    color: white;
+                    background: rgb(6, 6, 84);
+                  "
+                >
+                  submit
+                </button>
+              </center>
+            </form>
+
+            <!-- model body -->
+          </div>
+          <!-- model-content -->
+        </div>
+        <!-- model dialog end -->
+      </div>
+      <!-- model end -->
+    </div>
+
+    <script>
+      let preloader = document.getElementById("loading");
+      function myfunction() {
+        preloader.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

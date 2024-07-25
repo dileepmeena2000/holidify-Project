@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Destination Trip</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="css/Visiual stories.css" />
+
+    <!-- link java script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      href="https://img.freepik.com/free-vector/flat-vintage-travel-background_23-2148189177.jpg?size=338&ext=jpg&ga=GA1.1.1788614524.1719446400&semt=ais_user"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="navlogo"
+          />
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="moblogo"
+          />
+        </a>
+        <!-- mobile view -->
+        <button
+          class="navbar-toggler"
+          data-bs-target="#a"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu div start -->
+        <div class="navbar-collapse collapse" id="a">
+          <ul class="navbar-nav ms-auto c">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Destinations
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="package.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Package</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="Visiual stories.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+                >Visual Stories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="Besttime.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Best Time</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="Visa Policy.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Visa Policy</a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+                class="main-btn"
+                data-bs-target="#b"
+                data-bs-toggle="modal"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- menu div end -->
+      </div>
+      <!-- container fluid end -->
+    </nav>
+    <!-- navbar end -->
+
+    <body onload="myfunction()">
+      <div id="loading"></div>
+
+
+    <!-- container start -->
+    <br /><br /><br />
+    <br />
+    <div class="container-fluid">
+      <h1 style="text-decoration: underline">Visual Stories</h1>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search..." />
+        <button type="button" id="search-button">Search</button>
+      </div>
+      <div id="search-results"></div>
+
+      <br /><br />
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_3015_202336181634_Kedarnath.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/cultural-india/fascinating-facts-about-kedarnath-dham-yatra"
+                  ><h5>November Wonders: Explore Best Places Read more</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_6819_202353241038_Cover_Image_snowfall__21_January.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text" style="text-decoration: none">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/enjoy-fresh-snowfall-at-these-indian-cities-in-january"
+                  ><h5>
+                    Enjoy Fresh Snowfall At These Indian Cities in January Read
+                    more
+                  </h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_3707_202359131247_Cover_Image.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/explore-november-best-places-in-india"
+                  ><h5>November Wonders: Explore Best Places Read more</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_9108_202306301530_Jaisalmer_Top_10_Winter_Attractions_in_the_Golden_City.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/discover-jaisalmer-charm-with-top-10-attractions"
+                  ><h5>November Wonders: Explore Best Places Read more</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_2975_202226170628_Best_Places_To_Visit_in_Chennai_Cover_Image_15_December_min.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/best-places-to-visit-in-chennai"
+                  ><h5>Best Places To Visit in Chennai</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_9317_202352301451_Pune_cover_image.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/famous-destinations-to-explore-in-pune"
+                  ><h5>Famous Destinations To Explore In Pune</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_3767_202349011103_9._himachal_cover_image.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/famous-places-in-himachal-for-a-summer-holiday"
+                  ><h5>Famous Places In Himachal For A Summer Holiday</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_3847_202308151741_10_best_hill_stations_in_Uttarakhand_Cover_Image_13_March.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/famous-hill-stations-to-visit-in-uttarakhand"
+                  ><h5>Famous Hill Stations To Visit In Uttarakhand</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_1049_202233231051_Cover.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/10-popular-places-to-visit-in-north-east-india"
+                  ><h5>10 Popular Places To Visit In North East India</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_7010_202225170520_Gulmarg_16_November_min.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/best-places-to-see-snowfall-in-india"
+                  ><h5>Best Places to See Snowfall in India</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_5973_202235281518_Place_To_Visit_Near_Vizag_Cover_Image_22_December_min.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/best-places-to-visit-near-vizag"
+                  ><h5>Best Places To Visit Near Vizag</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/visualstories/Img_1826_202229091141_Places_in_India_fro_New_year_Celebration_29_November_min.jpg?h=400"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <a
+                  href="https://www.indianholidaytrip.com/visualstories/travel-destinations/best-places-to-celebrate-new-year-in-india"
+                  ><h5>Best Places to Celebrate New Year in India</h5>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- container start -->
+
+    <br />
+    <hr />
+    <div class="container mt-5">
+      <h1 style="color: blue">Best Places To Stay in India</h1>
+
+      <div class="row">
+        <h4 style="color: teal">Featured Destinations in India</h4>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1200/240947300.jpg?k=91bc5a72f415fcdc02a11dbf2bf2888885da735604718f8f8e2d11ff8882c3dc&o="
+            alt=""
+            class="w-100"
+          />
+          <h4>Lonavana hotles</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1200/191154940.jpg?k=88211891ccd14952da2ddd0b4733a4c5696b76bb5eb77926760fb9b631f33014&o="
+            alt=""
+            class="w-100"
+          />
+          <h4>Mcleodganj hotles</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/104300123_20210820180535.jpg"
+            alt=""
+            class="w-100"
+            height="205px"
+          />
+          <h4>Munar hotles</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1200/209361591.jpg?k=bf446f82cb9b888c0a8941f4c15b6de401410dc668112f443ea9aab23c801aab&o="
+            alt=""
+            class="w-100"
+          />
+          <h4>Gangtok hotles</h4>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <hr />
+    <!-- container start -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <h3 style="color: sienna">Best Hotels in India</h3>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/27151059_20200116111100.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>5-Star Hotels in Kolkata</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/45619601_20210622141845.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>5-Star Hotels in Chennai</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/64600453_20200117121524.jpg"
+            alt=""
+            class="w-100"
+            height="205px"
+          />
+          <h4>5-Star Hotels in Pune</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/34138033_20200113142449.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>5-Star Hotels in Bangalore</h4>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <hr />
+    <!-- container start -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <h3 style="color: saddlebrown">Top Resorts in India</h3>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/64188526_20210122142217.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>Lonavana hotles</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1200/19890682.jpg?k=3b3883c140b6e165b9039c53ac39325f919d2e87bb8b06115de737c180315c79&o="
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>Resort in jaipur for stay</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/93381543_20200110124930.jpg"
+            alt=""
+            class="w-100"
+            height="205px"
+          />
+          <h4>Resort in udaipur for a royal</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/34261064_20200117102354.jpg"
+            alt=""
+            class="w-100"
+          />
+          <h4>Resort in goa</h4>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br /><br />
+    <hr />
+    <!-- container start -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <h3 style="color: saddlebrown">Stays Collections in nearby country</h3>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/bgImages/THAILAND.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>Thailand hotles</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/bgImages/UAE.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>United Arab Emirates Hotels</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://r-xx.bstatic.com/xdata/images/city/608x352/977219.webp?k=eb68fc1a70f25a5ddca0f4ed69203b9a30ed5ae08d5923ffc045ef366c12229b&o="
+            alt=""
+            class="w-100"
+            height="205px"
+          />
+          <h4>hotel in dubai</h4>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTst438l_V-uw-fDRM_OVKa7tDW6Cp-emRfYQ&s"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>switzerland mountain hotel</h4>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br /><br />
+    <hr />
+    <!-- container start -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <h3 style="color: saddlebrown">Other stay collections</h3>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/tooltipImages/RAJASTHAN.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>Rajasthan hotles</h4>
+          <h5 style="color: blue">
+            Packages from <del style="color: red">70% Less</del> ₹1,199
+          </h5>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/tooltipImages/JAMMU-AND-KASHMIR.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>Janmmu and kashmir hotles</h4>
+          <h5 style="color: blue">
+            Packages from <del style="color: red">50% Less</del> ₹1,170
+          </h5>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/tooltipImages/UTTARAKHAND.jpg"
+            alt=""
+            class="w-100"
+            height="205px"
+          />
+          <h4>Uttarkhand hotles</h4>
+          <h5 style="color: blue">
+            Packages from <del style="color: red">40% Less</del> ₹2500
+          </h5>
+        </div>
+
+        <div class="col-md-3">
+          <br />
+
+          <img
+            src="https://www.holidify.com/images/tooltipImages/TAMIL-NADU.jpg"
+            alt=""
+            class="w-100"
+            height="200px"
+          />
+          <h4>Tamil-nadu hotles</h4>
+          <h5 style="color: blue">
+            Packages from <del style="color: red">55% Less</del> ₹1,800
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br /><br />
+    <hr />
+    <!-- container start -->
+    <div class="container aaa">
+      <br /><br /><br />
+      <center>
+        <h1 style="color: ; padding-top: 100px">
+          If yor are intrested please click this login button
+        </h1>
+      </center>
+
+      <center>
+        <br /><br />
+        <button
+          class="btn btn-primary"
+          data-bs-target="#aa"
+          data-bs-toggle="modal"
+          style="background-color: blue; font-size: 20px"
+        >
+          Book Now
+        </button>
+      </center>
+      <!-- button trigger model -->
+      <div class="modal fade" id="aa">
+        <div class="modal-dialog modal-md">
+          <!-- model-xl ,md,sm,lg -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login Form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <!-- model header end -->
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                  <label for="">name:</label>
+                  <input type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="">contact</label>
+                  <input type="number" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="">email:</label>
+                  <input type="email" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="">password:</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <br />
+                <button class="btn btn-warning">submit</button>
+              </form>
+            </div>
+            <!-- model body -->
+          </div>
+          <!-- model-content -->
+        </div>
+        <!-- model dialog end -->
+      </div>
+      <!-- model end -->
+    </div>
+    <!-- container end -->
+
+    <hr />
+    <br /><br /><br />
+
+    <!-- footer start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <h2>Explore Holidify</h2>
+          <ul>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Package</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Hotels</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Destination</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Collections</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Top India Tours</h2>
+
+          <ul>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Hawa Mahal Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >TAJ Mahal Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                Shrinagar Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                Shimla Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                AyodhyaTours</a
+              >
+            </li>
+
+            <br />
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Need help with tour packages?</h2>
+          <h4 style="color: teal">Fill This Form To Get The Callback</h4>
+          <h6><b style="color: orange">contact no :-</b> 0919999999</h6>
+          <h6><b style="color: orange">E-mail :-</b> Helloholiday@gmail.com</h6>
+          <h6><b style="color: orange">Mon-Fri:</b> 10AM - 7PM (IST)</h6>
+          <h6><b style="color: orange">Saturday:</b> 10AM - 2PM (IST)</h6>
+          <h2>FOLLOW US</h2>
+          <a href="#"
+            ><i
+              class="bx bxl-facebook-circle"
+              style="font-weight: 400; margin-left: 3px; font-size: 45px"
+            >
+            </i
+          ></a>
+          <a href="#"
+            ><i
+              class="bx bxl-instagram"
+              style="
+                color: orangered;
+                font-weight: 400;
+                margin-left: 3px;
+                font-size: 45px;
+              "
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="bx bxl-whatsapp"
+              style="
+                color: green;
+                font-weight: 400;
+                margin-left: 3px;
+                font-size: 45px;
+              "
+            ></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <center>
+        © Holidify Travels Pvt Ltd.- All Right Reserved
+        <span style="color: blue">Terms Privacy</span>
+      </center>
+    </div>
+    <!-- container end -->
+
+    <!-- button trigger model -->
+    <div class="modal fade" id="b">
+      <div class="modal-dialog modal-md">
+        <!-- model-xl ,md,sm,lg -->
+        <div class="modal-content">
+          <div class="modal-header" style="background: teal">
+            <h3 class="modal-title" style="color: white; text-align: center">
+              book now
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- model header end -->
+          <div class="modal-body" style="background: lightslategray">
+            <form action="">
+              <div class="mb-3">
+                <label for="">Name:</label>
+                <input type="text" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="">E-mail:</label>
+                <input type="email" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="">No.of guests:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g.,23"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="">Arrival Date & Time *:</label>
+                <input type="date" class="form-control" required />
+              </div>
+              <br />
+              <center>
+                <button
+                  class="btn btn-warning"
+                  style="
+                    font-size: larger;
+                    color: white;
+                    background: rgb(6, 6, 84);
+                  "
+                >
+                  submit
+                </button>
+              </center>
+            </form>
+
+            <!-- model body -->
+          </div>
+          <!-- model-content -->
+        </div>
+        <!-- model dialog end -->
+      </div>
+      <!-- model end -->
+    </div> <!-- container end -->
+++
+    <script>
+      let preloader= document.getElementById('loading');
+      function myfunction(){
+        preloader.style.display ='none';
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Destination Trip</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- link java script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      href="https://img.freepik.com/free-vector/flat-vintage-travel-background_23-2148189177.jpg?size=338&ext=jpg&ga=GA1.1.1788614524.1719446400&semt=ais_user"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="navlogo"
+          />
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="moblogo"
+          />
+        </a>
+        <!-- mobile view -->
+        <button
+          class="navbar-toggler"
+          data-bs-target="#a"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu div start -->
+        <div class="navbar-collapse collapse" id="a">
+          <ul class="navbar-nav ms-auto c">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Destinations
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="package.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Package</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="Visiual stories.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+                >Visiual Stories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="Besttime.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Best Time</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="Visa Policy.html"
+                class="nav-link"
+                style="font-size: 22px; font-weight: 600"
+              >
+                Visa Policy</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <button
+                class="main-btn"
+                data-bs-target="#b"
+                data-bs-toggle="modal"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- menu div end -->
+      </div>
+      <!-- container fluid end -->
+    </nav>
+    <!-- navbar end -->
+
+    <body onload="myfunction()">
+      <div id="loading"></div>
+     
+        
+   
+    <!-- carousel slid start -->
+    <div class="carousel slide" data-bs-ride="carousel" id="aa">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#aa"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#aa"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#aa"
+          data-bs-slide-to="2"
+        ></button>
+
+        <button
+          type="button"
+          data-bs-target="#aa"
+          data-bs-slide-to="3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- carousel inner start -->
+
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Hawa_Mahal_east_facade_%2814-07-2022%29.jpg"
+            alt=""
+            class="w-100"
+            height="700px"
+          />
+
+          <!-- <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Delhi%2C_India%2C_Red_Fort_Facade.jpg/2560px-Delhi%2C_India%2C_Red_Fort_Facade.jpg"
+            alt="" class="w-100" height="700px"
+          /> -->
+          <div class="carousel-caption">
+            <h1 style="color: orange">Hawa Mahal</h1>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://www.travelsiteindia.com/images/slider/banner1.jpg"
+            alt=""
+            class="w-100"
+            height="700px"
+          />
+          <div class="carousel-caption">
+            <h1 style="color: orange">Taj Mahal</h1>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://www.holidify.com/images/bgImages/LADAKH.jpg"
+            alt=""
+            class="w-100"
+            height="700px"
+          />
+          <div class="carousel-caption">
+            <h1 style="color: orange">Leh Ladakh</h1>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1400/0*bHrbUKhukhsdPiqt.jpg"
+            alt=""
+            class="w-100"
+            height="700px"
+          />
+          <div class="carousel-caption">
+            <h1 style="color: orange">Shimla</h1>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#aa"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#aa"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- carousel inner end  -->
+    </div>
+    <!-- carousel slid end -->
+
+    <marquee
+      behavior=""
+      direction=""
+      bgcolor="darkred"
+      ;
+      scrollamount="15"
+      onmouseover="stop();"
+      onmouseout="start();"
+    >
+      <p style="font-size: 23px; color: orange">
+        यात्रा एवं पर्यटनयात्रा एवं पर्यटन भारत देश का सबसे बड़ा सेवा क्षेत्र है।
+        इसके अंतर्गत भारतीय परंपरा, संस्कृति, चिकित्सा, व्यापार एवं खेल पर्यटन
+        के क्षेत्र आते हैं। इसका मुख्य उद्देश्य पर्यटन को विकसित करना एवं बढ़ावा
+        देना, भारतीय पर्यटन स्थल की महत्ता एवं गुणवत्ता को बरक़रार रखना एवं
+        उपलब्ध पर्यटन सुविधाओं एवं सेवाओं का विस्तार करना है ताकि इस क्षेत्र का
+        आर्थिक विकास हो सके एवं इसमें रोजगार के अवसर बन सकें। इस खंड में विभिन्न
+        पर्यटन स्थलों, यात्रा के साधनों, अनुमोदित यात्रा अभिकर्ताओं (ट्रेवल
+        एजेंट) एवं यात्रा के दौरान रहने संबंधी सुविधाओं के बारे जानकारी प्रदान
+        की गई है।
+      </p>
+    </marquee>
+
+    <!-- container start -->
+    <div class="container">
+      <br />
+      <h2 style="text-align: center; color: teal">
+        Welcome To <span style="color: orange">Indian Holiday </span>Tourist
+        palces
+      </h2>
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <h2 style="color: darkred">1. AYODHYA</h2>
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            The nearest Airport is the newly built Maharishi Valmiki
+            International Airport in Ayodhya .Prime Minister Naredra Modi
+            inaugurated the Ayodhya airport on 30th December 2023. Ayodhya has a
+            good railway network so many direct trains from various cities are
+            available .Two more airports from where one can easily travel are
+            varanasi and Faizabad as they have more connectivity across india as
+            of now. Ayodhya junction and Faizabad junction aree the nearest to
+            the temple . Similarly , many buses alse run on this routex Sp,
+            Whichever mode of transport is comfortable from and city , one can
+            take that. Also many taxis are easily available in the city foa all
+            the travel.
+            <br />
+
+            <b>Best Time: Throught the year</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-5 text-center">
+          <img
+            src="https://static.india.com/wp-content/uploads/2024/01/ram-mandir-ayodhya-1.jpg?impolicy=Medium_Widthonly&w=700"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <br />
+    <!-- container start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <h2 style="color: darkred">2. Hawa Mahal</h2>
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            The Hawa Mahal is a palace in the city of Jaipur, Rajasthan, India.
+            Built from red and pink sandstone, it is on the edge of the City
+            Palace, Jaipur, and extends to the Zenana, or women's chambers. The
+            structure was built in 1799 by the Maharaja Sawai Pratap Singh,
+            grandson of Maharaja Sawai Jai Singh, the founder of the city of
+            Jhunjhunu in the state of Rajasthan.[1] He was so inspired by the
+            unique structure of Khetri Mahal that he built this grand and
+            historical palace. It was designed by Lal Chand Ustad. Its
+            five-floor exterior is akin to a honeycomb with its 953 small
+            windows called Jharokhas decorated with intricate latticework.[2]
+            The original intent of the lattice design was to allow royal ladies
+            to observe everyday life and festivals celebrated in the street
+            below without being seen.
+            <br />
+
+            <b>Best Time: Throught the year</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-5 text-center">
+          <img
+            src="https://images.herzindagi.info/image/2020/Mar/interesting-facts-hawa-mahal.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- container start-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: darkred">3.kashmir</h1>
+
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            Famously known as 'Heaven on Earth, Srinagar is located in the union
+            territory of Jammu & Kashmir, on the banks of river Jhelum. Srinagar
+            is known for the stationary houseboats and gondola-type rowboats-
+            Shikaras on Dal Lake. Adorned with tranquil Dal Lake & Nigeen Lake,
+            Srinagar i... Dal is a Himalayan urban lake which is mainly used for
+            tourism. Fishery is of secondary importance. The lake comprises five
+            basins and a myriad of inter- connecting channels. It is one of the
+            most beautiful lakes of India and the second largest lake in the
+            State of Jammu and Kashmir.
+
+            <br />
+            <b>Best Time: April to october</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-4">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/981/537/277/ski-gulmarg-kashmir-india-wallpaper-preview.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <!-- container start-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: darkred">4.Manali</h1>
+
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            Manali is a town, near Kullu town in Kullu district in the Indian
+            state of Himachal Pradesh.[2] It is situated in the northern end of
+            the Kullu Valley, formed by the Beas River. The town is located in
+            the Kullu district, approximately 270 kilometres (170 mi) north of
+            the state capital of Shimla and 544 kilometres (338 mi) northeast of
+            the national capital of New Delhi. Manali is a popular tourist
+            destination in India and serves as the gateway to the Lahaul and
+            Spiti district as well as the city of Leh in Ladakh.[3]
+            <br />
+            <b>Best Time: April to october</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-5">
+          <img
+            src="https://i.ytimg.com/vi/HVkLM6__5qk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBZKIfOthm3rLY4HYlF1MTjTeQCGQ"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <!-- container start-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: darkred">5.Leh-ladakh</h1>
+
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            Ladakh ("land of high passes") is a Union Territory in northern
+            India. It is located between the Karakoram mountain range in the
+            north and the main Himalayas to the south. Ladakh is well-known for
+            its remote mountain scenery. It is inhabited by a mix of Indo-Aryan
+            and Tibetan people. Ladakh is a union territory in the Kashmir
+            region of India. Formerly falling in the state of Jammu & Kashmir,
+            Ladakh was administered a union territory on 31st October 2019.
+            Extending from the Siachen Glacier to the main Great Himalayas,
+            Ladakh is a land like no other. Dominated by dramatic land...
+            <br />
+            <b>Best Time: April-Mid-july</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-5">
+          <img
+            src="https://www.holidify.com/images/bgImages/LADAKH.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <!-- container start-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: darkred">6. Sikkim</h1>
+
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            Incredibly alluring, pleasantly boisterous and wreathed in clouds -
+            Gangtok, the capital of Sikkim, is one of the most popular hill
+            stations in India. Lying at the height of 1650 m above sea level,
+            the town during its bright sunny days offers spectacular views of
+            Mt. Kanchenjunga. Gangtok is a base ... Gangtok (Nepali: [gantok]
+            gāntok, Sikkimese: [ɡaŋt̪ʰòk]) is the capital and the most populous
+            city of the Indian state of Sikkim. The seat of eponymous district,
+            Gangtok is in the eastern Himalayan range, at an elevation of 1,650
+            m (5,410 ft).
+            <br />
+            <b>Best Time: April-Mid-july</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-5">
+          <img
+            src="https://www.holidify.com/images/cmsuploads/compressed/640px-Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim_20190307114917.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br />
+    <!-- container start-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: darkred">7. Alleppey</h1>
+
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            Alappuzha is bounded by the Laccadive Sea on its west. The town has
+            a network of lakes, lagoons and fresh water rivers. The richness of
+            the coastal Alappuzha waters is expressed annually in the blooming
+            and consequent deposit of a huge quantity of fishes and prawns on
+            the Alappuzha coast called '[Chakara]'. Officially called Alappuzha,
+            Alleppey is known for its network of canals and lagoons with
+            beautiful backwaters and the houseboats offering overnight stays.
+            Located in the southern part of Kerala, the coastline of Alleppey
+            offers some of the best beaches with water sports during the dry
+            sea...
+            <br />
+            <b>Best Time: April-Mid-july</b>
+            <br /><br />
+
+            <button
+              class="btn btn-info"
+              style="background-color: blue; color: white"
+            >
+              Know About
+            </button>
+            <button class="btn btn-danger" style="margin-left: 100px">
+              view More
+            </button>
+          </p>
+        </div>
+
+        <div class="col-md-6 mt-5">
+          <img
+            src="https://www.holidify.com/images/bgImages/ALLEPPEY.jpg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="text-align: center">
+            HERE ARE THE <b style="color: orange"> MAP TO KNOW</b> THE DIRECTION
+          </h2>
+          <br />
+          <img
+            src="https://i.pinimg.com/736x/99/d5/55/99d5553524672308a1823ce9f0a142cb.jpg"
+            alt=""
+            class="w-100"
+            height="700px"
+          />
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5">
+          <h2 style="text-align: center">
+            HERE ARE THE
+            <b style="color: teal"> THEORY TO KNOW THE</b> DIRECTION
+          </h2>
+
+          <p
+            style="
+              line-height: 35px;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              padding-right: 5px;
+              text-align: justify;
+              font-size: large;
+            "
+          >
+            Location Map of Jammu and Kashmir It occupies the North-West niche
+            of India, bounded on the South by Himachal Pradesh and Punjab, on
+            the South West and West by Pakistan, on the North by Chinese
+            Turkistan and a little of Russian Turkistan, and on the East by
+            Chinese Tibet -thus strategically bordering the territories of ...
+            By Road. Another good way to reach Kashmir from Delhi is by road,
+            and it allows you to have an exciting journey as well as enjoy the
+            beautiful environment. You can choose between two major routes:
+            Delhi-Pathankot-Jammu-Srinagar: This route is very popular among
+            holidaymakers. Location Map of Jammu and Kashmir It occupies the
+            North-West niche of India, bounded on the South by Himachal Pradesh
+            and Punjab, on the South West and West by Pakistan, on the North by
+            Chinese Turkistan and a little of Russian Turkistan, and on the East
+            by Chinese Tibet -thus strategically bordering the territories of
+            ...
+            <br />
+            <center>
+              <button
+                class="btn btn-info"
+                style="background-color: blue; color: white; font-size: large"
+              >
+                Read More
+              </button>
+            </center>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <div class="container mt-5">
+      <h3>Visit to Kashmir</h3>
+      <div class="row">
+        <iframe
+          width="460"
+          height="415"
+          src="https://www.youtube.com/embed/J5KmI8FWPeI?si=JaicYLP_CDYWpj35"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div class="container mt-5">
+      <h3>Google Map</h3>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105713.39206741663!2d74.7243546131659!3d34.106833129615666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!5e0!3m2!1sen!2sin!4v1720001148654!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <br /><br /><br />
+    <br />
+    <hr />
+    <br />
+    <!-- footer start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <img
+            src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+            alt=""
+            class="w-100"
+          />
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <h2>Explore Holidify</h2>
+          <ul>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Package</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Hotels</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Destination</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Collections</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Top India Tours</h2>
+
+          <ul>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >Hawa Mahal Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px"
+                >TAJ Mahal Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                Shrinagar Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                Shimla Tours</a
+              >
+            </li>
+            <li>
+              <a href="" style="text-decoration: none; font-size: 20px">
+                AyodhyaTours</a
+              >
+            </li>
+
+            <br />
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Need help with tour packages?</h2>
+          <h4 style="color: teal">Fill This Form To Get The Callback</h4>
+          <h6><b style="color: orange">contact no :-</b> 0919999999</h6>
+          <h6><b style="color: orange">E-mail :-</b> Helloholiday@gmail.com</h6>
+          <h6><b style="color: orange">Mon-Fri:</b> 10AM - 7PM (IST)</h6>
+          <h6><b style="color: orange">Saturday:</b> 10AM - 2PM (IST)</h6>
+          <h2>FOLLOW US</h2>
+          <a href="https://www.facebook.com/login/ " target="_blank"
+            ><i
+              class="bx bxl-facebook-circle"
+              style="font-weight: 400; margin-left: 3px; font-size: 45px"
+            >
+            </i
+          ></a>
+          <a href="https://www.instagram.com/accounts/login/?hl=en"target="_blank"
+            ><i
+              class="bx bxl-instagram"
+              style="
+                color: orangered;
+                font-weight: 400;
+                margin-left: 3px;
+                font-size: 45px;
+              "
+            ></i
+          ></a>
+          <a href="https://in.linkedin.com/"target="_blank"
+            ><i class='bx bxl-linkedin-square'
+              style="
+                color: rgb(15, 47, 93);
+                font-weight: 400;
+                margin-left: 3px;
+                font-size: 45px;
+              "
+            ></i
+          ></a>
+        </div>
+      </div>
+      <hr />
+      <center>
+        © Holidify Travels Pvt Ltd.- All Right Reserved
+        <span style="color: blue">Terms Privacy</span>
+      </center>
+    </div>
+    <!-- container end -->
+
+    <!-- button trigger model -->
+    <div class="modal fade" id="b">
+      <div class="modal-dialog modal-md">
+        <!-- model-xl ,md,sm,lg -->
+        <div class="modal-content">
+          <div class="modal-header" style="background: teal">
+            <h3 class="modal-title" style="color: white; text-align: center">
+              book now
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- model header end -->
+          <div class="modal-body" style="background: lightslategray">
+            <form action="">
+              <div class="mb-3">
+                <label for="">Name:</label>
+                <input type="text" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="">E-mail:</label>
+                <input type="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="">No.of guests:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g.,23"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="">Arrival Date & Time *:</label>
+                <input type="date" class="form-control" required />
+              </div>
+              <br />
+              <center>
+                <button
+                  class="btn btn-warning"
+                  style="
+                    font-size: larger;
+                    color: white;
+                    background: rgb(6, 6, 84);
+                  "
+                >
+                  submit
+                </button>
+              </center>
+            </form>
+          </div>
+          <!-- model body -->
+        </div>
+        <!-- model-content -->
+      </div>
+      <!-- model dialog end -->
+    </div>
+    <!-- model end -->
+
+
+    <script>
+      let preloader= document.getElementById('loading');
+      function myfunction(){
+        preloader.style.display ='none';
+      }
+    </script>
+
+  </body>
+</html>
